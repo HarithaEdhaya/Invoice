@@ -1,0 +1,153 @@
+/* General Reset */
+body, h1, h2, p, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #222;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+}
+
+/* Header */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 10px;
+}
+
+/* Form Styles */
+form h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #007acc;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #444;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+input:focus, textarea:focus {
+  border-color: #007acc;
+  outline: none;
+  background-color: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005ea1;
+  transform: translateY(-2px);
+}
+
+/* Add Item Button */
+#add-item {
+  background-color: #28a745;
+}
+
+#add-item:hover {
+  background-color: #218838;
+}
+
+/* Item Details */
+.item {
+  border: 2px dashed #007acc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9fcff;
+}
+
+.item label {
+  color: #005ea1;
+}
+
+/* Invoice Preview */
+#invoice-preview {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 3px solid #007acc;
+}
+
+#invoice-preview.hidden {
+  display: none;
+}
+
+#invoice-preview h2 {
+  text-align: center;
+  color: #333333;
+}
+
+#invoice-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+#download-pdf, #print-invoice {
+  margin: 10px 5px 0;
+  background-color: #6c757d;
+}
+
+#download-pdf:hover, #print-invoice:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
